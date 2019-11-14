@@ -21,6 +21,8 @@ def openWebPage(data):
         wb.open(f"{gmap}{data[3:]}")
     elif address == 'git':
         wb.open(f"{git}")
+    else:
+        wb.open(data) # Data copied in clipboard will be opened
 
 
 if NoOfArg > 1:
